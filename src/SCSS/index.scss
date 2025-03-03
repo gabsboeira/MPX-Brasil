@@ -836,40 +836,65 @@ body {
 	}
 }
 .card-calendario {
-	background-color: white; // Cor de fundo do card
-	color: #01579b; // Cor do texto
+	background-color: white;
 	border-radius: 10px;
-	padding: 20px;
-}
+	padding: 30px;
 
-.col-calendario {
-	text-align: left;
-	padding: 15px;
-	border-right: 1px solid rgba(255, 255, 255, 0.2); // Linha vertical quase transparente
-}
-.subtitulo-calendario {
-	font-size: 14px;
-
-	&:last-child {
-		border-right: none; // Remove a borda do último item
-	}
-}
-.titulo-calendario {
-	font-size: 24px; // Tamanho padrão do texto
-	font-weight: bold;
-
-	// Ajuste para o "13"
-	&::before {
-		content: "13";
-		font-size: 32px; // Define o tamanho maior para o número
-		font-weight: bold;
-		line-height: 1.2;
+	.col-calendario {
 		text-align: left;
-	}
-}
+		position: relative;
 
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
+		&:not(:last-child)::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0px;
+			width: 1px;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.2); // Linha vertical semi-transparente
+		}
+	}
+
+	.card-data {
+		padding-right: 15px; // Espaço para a borda
+		padding-left: 15px; // Espaço para a borda
+
+		.titulo-calendario {
+			font-size: 24px;
+			color: #01579b;
+			font-family: "Inter-SemiBold";
+			font-weight: bold;
+			text-align: left;
+			margin-bottom: 7px;
+
+			span {
+				font-size: 32px;
+			}
+		}
+
+		.subtitulo-calendario {
+			font-size: 16px;
+			text-align: left;
+			color: #01579b;
+		}
+
+		img {
+			margin-top: 12px;
+			margin-bottom: 12px;
+		}
+
+		.texto-calendario {
+			color: #616161;
+			font-size: 20px;
+			font-weight: 600;
+			text-align: left;
+		}
+
+		.subtexto-calendario {
+			font-size: 14px;
+			text-align: left;
+			color: #616161;
+			margin: 12px 0 0;
+		}
+	}
 }

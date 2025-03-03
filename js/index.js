@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready( function ( $ ) {
     $('.slick-servicos').slick({
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 2,
         dots: false,
-		arrows: true,
+		arrows: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/btn-esq.png" alt="Anterior"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/btn-dir.png" alt="Próximo"></button>',
 
@@ -47,21 +47,21 @@ $(document).ready( function ( $ ) {
             {
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 6,
                     slidesToScroll: 2,
 				}
 			},
 			{
 				breakpoint: 1200,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 6,
                     slidesToScroll: 2,
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 4,
                     slidesToScroll: 2,
 				}
 			},
@@ -132,7 +132,7 @@ $(document).ready( function ( $ ) {
         centerPadding: '-100px',
         slidesToShow: 3,        
         dots: false,
-        arrows: true,
+        arrows: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/btn-esq.png" alt="Anterior"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/btn-dir.png" alt="Próximo"></button>',
         responsive: [

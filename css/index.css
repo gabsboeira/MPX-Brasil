@@ -909,40 +909,64 @@ body {
 
 .card-calendario {
   background-color: white;
-  color: #01579b;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
 }
 
-.col-calendario {
+.card-calendario .col-calendario {
   text-align: left;
-  padding: 15px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
-.subtitulo-calendario {
-  font-size: 14px;
+.card-calendario .col-calendario:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.subtitulo-calendario:last-child {
-  border-right: none;
+.card-calendario .card-data {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.titulo-calendario {
+.card-calendario .card-data .titulo-calendario {
   font-size: 24px;
+  color: #01579b;
+  font-family: "Inter-SemiBold";
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 7px;
 }
 
-.titulo-calendario::before {
-  content: "13";
+.card-calendario .card-data .titulo-calendario span {
   font-size: 32px;
-  font-weight: bold;
-  line-height: 1.2;
+}
+
+.card-calendario .card-data .subtitulo-calendario {
+  font-size: 16px;
+  text-align: left;
+  color: #01579b;
+}
+
+.card-calendario .card-data img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.card-calendario .card-data .texto-calendario {
+  color: #616161;
+  font-size: 20px;
+  font-weight: 600;
   text-align: left;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.card-calendario .card-data .subtexto-calendario {
+  font-size: 14px;
+  text-align: left;
+  color: #616161;
+  margin: 12px 0 0;
 }
