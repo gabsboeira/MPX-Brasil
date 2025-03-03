@@ -1,0 +1,844 @@
+@font-face {
+    font-family: "Inter-Regular";
+    font-display: swap;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter-ExtraBold";
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter-SemiBold";
+    font-display: swap;
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter-Bold";
+    font-weight: "Bold";
+    font-display: swap;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+  }
+
+
+$corPrimaria: #01579b;
+
+body {
+    background-color: #fafafa;
+}
+
+.fluid-logo {
+  background-color: $corPrimaria;
+  padding: 16px 0px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.lista-flex {
+  display: flex;
+  list-style: none; /* Remove os marcadores padrão da lista */
+  margin: 8px 0px;
+  padding: 0;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.lista-flex li {
+  margin-right: 30px;
+  width: 100%;
+}
+
+.meu-link {
+    text-decoration: none; 
+    color:black; /* Mantém a cor do link */
+    font-family: "Inter-SemiBold";
+    font-size: 12px;
+    border: solid 1px #eeeeee;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+
+    &:hover{
+        text-decoration: none;
+        color:#01579B;
+    }
+}
+
+.btn-pesquisar {
+  display: flex; 
+  margin-right: 0px;
+  justify-content: space-between;
+}
+
+.card-link{
+  padding: 13px;
+  border-radius: 24px;
+  border: none;
+  height: 94px;
+  text-align: center; /* alinhamento texto */
+  display: flex;
+  justify-content: center; /* alinhamento horizontal (tudo) */
+  align-items: center; /* alinhamento vertical (tudo) */
+  text-decoration: none;  
+  background-color: #eceff1;
+
+  &:hover {
+    background-color: #fff;
+    transition: all 0.2s ease;
+    .card-texto{
+        color: #01579B;
+        transition: all 0.2s ease;
+    }
+  }
+
+  &:focus {
+    background-color: #fff;
+    transition: all 0.2s ease;
+    .card-texto{
+        color: #0277BD;
+        transition: all 0.2s ease;
+    }
+  }
+  .card-texto{
+    font-family:"Inter-Bold";
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin-top: 4px;
+  }
+
+    @media screen and (max-width: 575.9px) {
+        margin-bottom: 15px;       
+    }
+}
+
+.img-logo {
+    @media screen and (max-width: 767.9px) {
+        margin-bottom: 30px;       
+    }
+}
+
+.fluid-menu{
+  background-color: #0277bd;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  background-color: #0277bd;
+
+  /* Alterando o ícone hamburguer para branco */
+  .navbar-toggler-custom {
+    color: #fff; /* Branco */
+    font-size: 30px;
+    text-align: end;
+  }
+
+  .nav-item {
+    margin-right: 130px;
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    @media screen and (max-width: 1399.9px) {
+      margin-right: 95px;      
+    }
+
+    @media screen and (max-width: 1199.9px) {
+      margin-right:  60px; 
+    }
+
+    @media screen and (max-width: 991.9px) {
+      margin-right: 15px;   
+    }
+
+    @media screen and (max-width: 767.9px) {
+       margin-right: 90px;
+    }
+
+    @media screen and (max-width: 575.9px) {
+       margin-right: 90px;      
+    }
+
+    @media screen and (max-width: 425px) {
+       margin-right: 90px;      
+    }
+
+    @media screen and (max-width: 375px) {
+       margin-right: 90px;      
+    }
+    
+    @media screen and (max-width: 320px) {
+       margin-right: 90px;      
+    }
+  }
+
+  .nav-menu {
+    background-color: #0277bd;
+  
+    .nav-link-texto {
+      color: #fff;
+      font-family: "Inter-SemiBold";
+      font-size: 16px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;      
+    }
+
+    @media screen and (max-width: 767.9px) {
+      justify-content: end;
+    }
+  }
+}
+
+
+.fluid-carrosel {
+  #carouselVitrine {
+    .img-carousel {
+      width: 100%;
+    }
+
+    .carousel-indicators {
+      align-items: center;
+
+      .indicadores {
+        background-color: #b3e5fc;
+        opacity: 1;  
+        border-radius: 9px;
+        height: 8px;
+        width: 48px;
+      
+        @media screen and (max-width: 991.9px) {
+          height:4px;
+          width: 24px;
+        }    
+
+        @media screen and (max-width: 375px) {
+          height: 2px;
+          width: 12px;
+        }   
+      }
+      .active {
+        background-color: #03a9f4;
+        height: 12px;
+        width: 48px;
+        opacity: 1px;
+        border-radius: 9px;
+
+        @media screen and (max-width: 991.9px) {
+          height:6px;
+          width: 24px;
+        }
+        @media screen and (max-width: 375px) {
+          height: 4px;
+          width: 12px;
+        } 
+      
+      }
+      @media screen and (max-width: 575.9px) {
+        margin-bottom: 0px;
+      } 
+    
+    }
+  
+    .custom-carousel-button {
+      width: 48px; /* Ajuste o tamanho da imagem conforme necessário */
+      height: auto;
+      margin-left: 64px;
+      margin-right: 64px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 100;
+
+      &:hover {
+        width: 50px;
+        transition: all 0.2s ease;
+      }
+      @media screen and (max-width: 991.9px) {
+        width: 36px;  
+        margin-left: 50px;
+        margin-right: 50px; 
+        &:hover {
+          width: 38px;
+          transition: all 0.2s ease;
+        }
+      }
+      @media screen and (max-width: 575.9px) {
+        display: none;
+      }    
+    } 
+
+    .carousel-control-next {      
+      opacity: 1;
+      .custom-carousel-button {
+        right: 10px; /* Distância do lado direito */
+      }
+    }
+    .carousel-control-prev {
+      opacity: 1;
+      .custom-carousel-button {
+        left: 10px; /* Distância do lado esquerdo */
+      }
+  
+    }
+    
+  }
+  
+}
+
+.fluid-servico {
+  background-color: $corPrimaria;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius:24px;
+
+  .slick-track {
+    display: flex;
+    
+  }
+  .slick-prev{
+    font-size: 24px; // Ajuste o tamanho do ícone
+    color: #000; // Cor do ícone
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 40px;
+    // height: 40px;
+    background: none; // Remove fundo padrão do Slick
+    border: none; // Remove bordas
+    left: -30px;
+
+  }
+  .slick-next {
+    font-size: 24px; // Ajuste o tamanho do ícone
+    color: #000; // Cor do ícone
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 40px;
+    // height: 40px;
+    background: none; // Remove fundo padrão do Slick
+    border: none; // Remove bordas
+    right: 0px;
+}
+
+  .slick-prev {
+      &:before {
+          content: "\F284"; // Ícone de seta esquerda (chevron-left)
+      }
+  }
+
+  .slick-next {
+      &:before {
+          content: "\F285"; // Ícone de seta direita (chevron-right)
+      }
+  }
+ 
+  .card-servico { 
+    background-color: #eceff1;
+    padding: 8px;
+    border-radius: 24px;
+    border: none;
+    min-height: 94px;
+    text-align: center; /* alinhamento texto */
+    display: flex;
+    justify-content: center; /* alinhamento horizontal (tudo) */
+    text-decoration: none;  
+
+    .card-texto {
+      font-family:"Inter-Bold";
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      text-align: center;
+      color: #000;
+      text-decoration: none;
+      margin-top: 4px;
+      min-height: 38px;
+    }
+
+    i {
+    color: #000;
+    font-size: 32px;
+    }
+  }
+}
+.slick-servicos {
+ 
+    .col-servico {
+      width: 100%;
+      display: inline-block;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+    .slick-track {
+      display: flex;
+      
+    }
+    .slick-prev{
+      font-size: 24px; // Ajuste o tamanho do ícone
+      color: #000; // Cor do ícone
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // width: 40px;
+      // height: 40px;
+      background: none; // Remove fundo padrão do Slick
+      border: none; // Remove bordas
+      left: -70px;
+
+    }
+    .slick-next {
+      font-size: 24px; // Ajuste o tamanho do ícone
+      color: #000; // Cor do ícone
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // width: 40px;
+      // height: 40px;
+      background: none; // Remove fundo padrão do Slick
+      border: none; // Remove bordas
+      right: -35px;
+
+
+    .slick-prev {
+        &:before {
+            content: "\F284"; // Ícone de seta esquerda (chevron-left)
+        }
+    }
+
+    .slick-next {
+        &:before {
+            content: "\F285"; // Ícone de seta direita (chevron-right)
+        }
+    }
+
+  
+  }  
+}
+.col-vinheta{
+  padding-top: 32px;
+  padding-bottom: 29px;
+  position: relative;
+  .vinheta {
+    font-family: "Inter-SemiBold";
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+    overflow: hidden;
+    position: relative;  // Adicionando relative para posicionamento do pseudo-elemento
+
+    @media screen and (max-width: 991.9px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 575.9px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 22px;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;  // Garantindo que a largura ocupe 100% do conteúdo de texto
+      height: 16px;
+      border-radius: 2px;
+      background-color: #e1f5fe;
+      position: absolute;
+      z-index: -1;
+      top: 65%;  // Coloca o after logo abaixo do conteúdo da vinheta
+      left: 0;
+    }
+    &--branca {
+      @extend .vinheta;
+      color: white;
+      &::after {
+        background-color: #0277bd;
+      }
+    }
+  }  
+}
+.card-noticia{
+  border-radius: 24px;
+  border: solid 1px #eeeeee;
+  background-color: #ffffff;
+  text-decoration: none; 
+  padding-bottom: 10px;
+
+  @media screen and (max-width: 767.9px) {
+    margin-bottom: 25px;
+  }
+  .card-texto-noticia{
+    font-family: "Inter-SemiBold";
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616161;
+    min-height: 90px;
+
+    @media screen and (max-width: 1199.9px) {
+      min-height: 112px;
+    }
+
+    @media screen and (max-width: 991.9px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 767.9px) {
+      min-height: auto;
+      font-size: 16px;
+    }
+    @media screen and (max-width: 575.9px) {
+      min-height: auto;
+      font-size: 16px;
+    }
+    @media screen and (max-width: 425px) {
+      min-height: auto;
+      font-size: 16px;
+    }
+  }
+  .card-data{
+    font-weight: 400;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 6px 26px 6px 26px;
+    border-radius: 12px;
+    background-color: #4fc3f7;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #001c33;
+    margin-left: 30px;
+    position: absolute;
+    top: 36px;
+  }
+}
+
+.fundo-noticias { 
+  border-radius: 24px;
+  border: solid 1px #eeeeee;
+  background-color: #ffffff;
+  text-decoration: none; 
+  padding-bottom: 10px;
+  display: flex;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  margin-top: 32px;
+
+  @media screen and (max-width: 575.9px) {
+      padding-left:45px ;
+  }
+
+
+
+  .slick-track {
+    display: flex;
+    
+  }
+  .slick-prev{
+    font-size: 24px; // Ajuste o tamanho do ícone
+    color: #000; // Cor do ícone
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 40px;
+    // height: 40px;
+    background: none; // Remove fundo padrão do Slick
+    border: none; // Remove bordas
+    left: -30px;
+
+  }
+  .slick-next {
+    font-size: 24px; // Ajuste o tamanho do ícone
+    color: #000; // Cor do ícone
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 40px;
+    // height: 40px;
+    background: none; // Remove fundo padrão do Slick
+    border: none; // Remove bordas
+    right: 0px;
+}
+
+  .slick-prev {
+      &:before {
+          content: "\F284"; // Ícone de seta esquerda (chevron-left)
+      }
+  }
+
+  .slick-next {
+      &:before {
+          content: "\F285"; // Ícone de seta direita (chevron-right)
+      }
+  }
+  .col-noticias {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      border-radius: 2px;
+      background-color: #dee2e6;
+      position: absolute;
+      z-index: -1;
+      top: 5px;
+      right: 0px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .data-noticia {
+      text-align: left;
+      box-sizing: border-box;
+      padding: 6px 26px 6px 26px;
+      border-radius: 12px;
+      background-color: #4fc3f7;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #001c33;
+      margin-left: -143px;
+      position: absolute;
+      top: 36px;
+
+      @media screen and (max-width: 1399.9px) {
+        margin-left: -90px
+      }
+      @media screen and (max-width: 1199.9px) {
+        margin-left: -60px
+      }
+      @media screen and (max-width: 991.9px) {
+        margin-left: 1px;
+        font-size: 12px;
+        text-align: center;
+      }
+  
+  
+    }
+    
+    img {
+      width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+      height: 120px; /* Define uma altura fixa para todas as imagens */
+      object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+      border-radius: 16px;
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+
+    .card-texto-noticias {
+      font-family: "Inter-SemiBold";
+      font-size: 20px;
+      padding: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #616161;
+      min-height: 90px;
+
+      @media screen and (max-width: 1199.9px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 991.9px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 767.9px) {
+        font-size: 16px;
+      }
+  
+  
+    }
+  }  
+}
+
+.btn-padrao {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fab005;
+  border: 2px solid #fab005;
+  font-family: "Inter-SemiBold";
+  font-size: 16px;
+  height: 50px;
+  padding: 14px;
+  text-align: center;
+  color: #2d2d2d;
+  transition: 0.6s;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #fab005;
+    border-color: #fab005;
+    color: #000;
+    transition: all 0.2s ease;
+  }
+}
+
+.container-banner-duo {
+  margin-top: 32px;
+  margin-bottom: 32px;
+ 
+  @media screen and (max-width: 767.9px) {
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.container-galeria {
+  background-color: #01579b;
+  border-radius: 16px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  padding: 20px; // Adicionando um espaçamento interno para melhorar a aparência
+  margin-top: 32px;
+  position: relative;
+  z-index: -5;
+
+  .col-vinheta-galeria {
+    padding-top: 32px;
+    padding-bottom: 29px;
+    text-align: left; // Centraliza o texto da vinheta no container
+  }
+
+
+  .foto-container{
+    position: relative; // Permite que elementos filhos absolutos sejam posicionados em relação a ele
+    display: inline-block;
+    border: none;
+
+    .data-noticia {
+      text-align: left;
+      box-sizing: border-box;
+      padding: 6px 26px 6px 26px;
+      border-radius: 12px;
+      background-color: #4fc3f7;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #001c33;
+      margin-left: -411px;
+      position: absolute;
+      top: 29px;
+    }
+  }
+  .slick-galeria{
+    .slick-slide {
+      transition: transform 0.3s ease, opacity 0.3s ease; // Animação suave
+  }
+  
+  .slick-center img {
+      // transform: scale(1.2); // Aumenta a imagem em 20%
+  }
+  
+    .col-galeria {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .slick-prev, .slick-next {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+  
+    .slick-prev img, .slick-next img {
+      width: 30px; /* Ajuste o tamanho conforme necessário */
+      height: auto;
+    }
+  
+  }
+}
+.card-calendario {
+  background-color: white; // Cor de fundo do card
+  color: #01579b; // Cor do texto
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.col-calendario {
+  text-align: left;
+  padding: 15px;
+  border-right: 1px solid rgba(255,255,255,0.2); // Linha vertical quase transparente
+  }
+  .subtitulo-calendario{
+    font-size: 14px;
+
+  &:last-child {
+      border-right: none; // Remove a borda do último item
+  }
+}
+.titulo-calendario {
+  font-size: 24px; // Tamanho padrão do texto
+  font-weight: bold;
+
+  // Ajuste para o "13"
+  &::before {
+      content: "13";
+      font-size: 32px; // Define o tamanho maior para o número
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: left;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
