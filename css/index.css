@@ -69,7 +69,7 @@ body {
 
 .meu-link:hover {
   text-decoration: none;
-  color: #01579B;
+  color: #01579b;
 }
 
 .btn-pesquisar {
@@ -100,7 +100,7 @@ body {
 }
 
 .card-link:hover .card-texto {
-  color: #01579B;
+  color: #01579b;
   transition: all 0.2s ease;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .card-link:focus .card-texto {
-  color: #0277BD;
+  color: #0277bd;
   transition: all 0.2s ease;
 }
 
@@ -653,8 +653,6 @@ body {
 }
 
 .fundo-noticias .col-noticias {
-  flex: 1;
-  text-align: center;
   padding: 0 15px;
   position: relative;
 }
@@ -781,19 +779,19 @@ body {
 }
 
 .btn-padrao:hover {
-  background-color: #fab005;
-  border-color: #fab005;
+  background-color: #ffc107;
+  border-color: #ffc107;
   color: #000;
   transition: all 0.2s ease;
 }
 
-.container-banner-duo {
+.container-banner {
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767.9px) {
-  .container-banner-duo img {
+  .container-banner img {
     margin-bottom: 30px;
   }
 }
@@ -805,8 +803,6 @@ body {
   border-bottom-left-radius: 24px;
   padding: 20px;
   margin-top: 32px;
-  position: relative;
-  z-index: -5;
 }
 
 .container-galeria .col-vinheta-galeria {
@@ -834,31 +830,81 @@ body {
   line-height: 1.43;
   letter-spacing: normal;
   color: #001c33;
-  margin-left: -411px;
+  left: 30px;
   position: absolute;
   top: 29px;
 }
 
+.container-galeria .slick-galeria {
+  margin: 0 auto;
+}
+
 .container-galeria .slick-galeria .slick-slide {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.container-galeria .slick-galeria .col-galeria {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container-galeria .slick-galeria .slick-prev, .container-galeria .slick-galeria .slick-next {
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0;
 }
 
-.container-galeria .slick-galeria .slick-prev img, .container-galeria .slick-galeria .slick-next img {
-  width: 30px;
-  /* Ajuste o tamanho conforme necessário */
-  height: auto;
+.container-galeria .slick-galeria .slick-track {
+  display: flex;
+}
+
+.container-galeria .slick-galeria .slick-slide.slick-center .col-box-galeira {
+  padding: 0px;
+}
+
+@media screen and (max-width: 575px) {
+  .container-galeria .slick-galeria .slick-slide.slick-center .col-box-galeira .card-efect {
+    background-image: none !important;
+  }
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria:hover {
+  border-radius: 24px;
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria:hover img {
+  border-radius: 24px;
+  transform: scale(1.1);
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria:active .foto-container {
+  margin: 0px;
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria:active .foto-container img {
+  transform: scale(1.1);
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria .foto-container {
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria .foto-container img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 24px;
+}
+
+.container-galeria .slick-galeria .slick-slide .col-galeria .foto-container .efeito-imagem {
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 24px;
 }
 
 .card-calendario {
