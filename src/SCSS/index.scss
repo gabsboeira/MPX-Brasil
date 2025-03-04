@@ -687,7 +687,7 @@ body {
 }
 
 .btn-padrao {
-	width: 100%;
+	width: 70%;
 	margin-bottom: 30px;
 	border-radius: 12px;
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
@@ -695,6 +695,7 @@ body {
 	border: 2px solid #fab005;
 	font-family: "Inter-SemiBold";
 	font-size: 16px;
+	font-weight: bold;
 	height: 50px;
 	padding: 14px;
 	text-align: center;
@@ -839,6 +840,7 @@ body {
 	background-color: white;
 	border-radius: 10px;
 	padding: 30px;
+	margin-bottom: 30px;
 
 	.col-calendario {
 		text-align: left;
@@ -898,3 +900,52 @@ body {
 		}
 	}
 }
+.card-galerias {
+    border-radius: 24px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; // Faz os cards ficarem do mesmo tamanho
+	overflow: hidden;
+
+	.video-galeria{
+		border-radius: 24px;
+	}
+
+	.img-container img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; // Mantém a proporção e evita distorções
+		}
+
+	.data-noticia-galerias {
+			position: absolute;
+			top: 29px;
+			left: 30px;
+			padding: 6px 26px;
+			border-radius: 12px;
+			background-color: #4fc3f7;
+			font-size: 14px;
+			font-weight: normal;
+			color: #001c33;
+			box-sizing: border-box;
+			text-align: left;
+		}
+
+	.card-texto-galerias {
+			font-family: "Inter-SemiBold";
+			font-size: 24px;
+			padding: 20px;
+			font-weight: 600;
+			text-align: left;
+			color: #000;
+			min-height: 90px;
+		}
+	}
+
+
