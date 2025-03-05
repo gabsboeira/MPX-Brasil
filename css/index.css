@@ -982,12 +982,15 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .card-galerias .video-galeria {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
   border-radius: 24px;
 }
 
@@ -1019,4 +1022,94 @@ body {
   text-align: left;
   color: #000;
   min-height: 90px;
+  text-decoration: none;
+}
+
+.fluid-contato {
+  background-color: #0277bd;
+  padding: 16px 0px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.fluid-contato .titulo-contato {
+  font-family: "Inter-Bold";
+  font-size: 24px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+
+.fluid-contato .titulo-contato span {
+  font-size: 16px;
+  font-weight: 0;
+  font-family: "Inter-Regular";
+}
+
+.fluid-links {
+  background-color: #01579b;
+  padding: 16px 0px;
+}
+
+.fluid-links {
+  background-color: #01579b;
+  padding: 16px 0px;
+}
+
+.fluid-links .titulo-contato {
+  font-family: "Inter-Bold";
+  font-size: 24px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fluid-links .titulo-contato span {
+  font-size: 16px;
+  font-weight: 0;
+  font-family: "Inter-Regular";
+  text-decoration: none;
+}
+
+.fluid-links .titulo-contato ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+.fluid-links .titulo-contato ul li {
+  margin-bottom: 12px;
+  min-height: auto;
+}
+
+.fluid-links .titulo-contato ul li a {
+  text-decoration: none;
+  color: #e1f5fe;
+}
+
+.fluid-links .titulo-contato ul li a:hover {
+  color: #e1f5fe;
+  text-decoration: underline;
+}
+
+.rodapé {
+  font-size: 16px;
+  font-family: "Inter-Regular";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #212529;
 }

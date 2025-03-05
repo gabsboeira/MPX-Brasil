@@ -176,3 +176,21 @@ $(document).ready( function ( $ ) {
     });
     
 });
+
+$(document).ready(function() {
+    var location = { lat: -11.8647, lng: -55.5096 };  // Coordenadas de Sinop
+
+    // Inicializa o mapa
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: location
+    });
+
+    // Cria um marcador no mapa
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+});
+
+  // Certifique-se de que todas as funções e objetos estão devidamente fechados
