@@ -65,6 +65,13 @@ $(document).ready( function ( $ ) {
                     slidesToScroll: 2,
 				}
 			},
+            {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+                    slidesToScroll: 2,
+				}
+			},
 			{
 				breakpoint: 575,
 				settings: {
@@ -175,17 +182,11 @@ $(document).ready( function ( $ ) {
         ]
     });
 
-    window.onload = function () {
-        var parallaxElement = document.querySelector('.fluid-parallax');
-        var parallaxInstance = new Parallax(parallaxElement);
-    }
-    
+   
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const parallax = document.querySelector(".fluid-parallax");
+
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona o elemento com a classe 'fluid-parallax' 
-    var parallaxElement = document.querySelector('.fluid-parallax');
-    
-    // Inicializa o Parallax.js para o elemento selecionado
-    new Parallax(parallaxElement);
-});

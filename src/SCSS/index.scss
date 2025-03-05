@@ -998,28 +998,45 @@ body {
 	}
 }
 
-.fluid-parallax {
-	background-image: url('../images/image-background.jpg'); /* Insira a string Base64 aqui */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    border-radius: 24px;
-    margin-bottom: 80px;
-    position: relative; /* Necessário para o efeito parallax funcionar corretamente */
 
-    .card-parallax {
-        border-radius: 24px;
-        border: solid 1px #eeeeee;
-        background-color: #ffffff;
-        text-decoration: none;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        margin-bottom: 30px;
-    }
+
+.fluid-parallax {
+	background-image: url('../images/parallax.png');
+	background-size: cover; /* Faz com que a imagem se ajuste sem cortar */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+	background-attachment: fixed;  /* Mantém o fundo fixo enquanto a página rola */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    width: 100%;
+	margin-bottom: 30px;
+	border-radius: 24px;
+	
+	@media screen and (max-width: 1199.9px) {
+		height: 300px;
+	}
+	@media screen and (max-width: 991.9px) {
+		height: 200px;
+	}
 }
+
+.fluid-card-parallax {
+	position: absolute;
+	.card-parallax {
+		border-bottom-right-radius: 24px;
+		border-bottom-left-radius: 24px;
+		border: solid 1px #eeeeee;
+		background-color: #ffffff;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		margin-bottom: 30px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		position: relative;
+		right: 20%;	
+		width: 100%;
+	}
+}
+
 
 
 .fluid-contato{
