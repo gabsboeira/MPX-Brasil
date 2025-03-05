@@ -1,863 +1,746 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-    <link href="css/index.css" type="text/css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+			rel="stylesheet"
+			Im9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossoriginaintegrity="sha384-EVSTQN3/azprG1Anm3QDgpJL
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-    <!-- Adicione o jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script src="js/index.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn8ykGfHpIQ5bXQg4-yL7mxnJHo534oFE&callback=initMap"
-      async defer></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+		<!-- Adicione o jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/slick.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
 
-    <title>Processo Seletivo MPX Brasil</title>
-  </head>
-  <body>
-    <header>
-      <!-- acessibilidade -->
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-servico">
-              <ul class="lista-flex">
-                <li><a href="#" class="meu-link">Aumentar fonte</a></li>
-                <li><a href="#" class="meu-link">Auto Contraste</a></li>
-                <li><a href="#" class="meu-link">Mapa do Site</a></li>
-                <li><a href="#" class="meu-link">Fonte para dislexia</a></li>
-                <li>
-                  <a href="#" class="meu-link">Entenda a Acessibilidade</a>
-                </li>
-                <li>
-                  <a href="#" class="meu-link btn-pesquisar">
-                    <div>Pesquise no Site</div>
-                    <div><i class="bi bi-search"></i></div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+		<script src="js/index.js"></script>
 
-      <div class="container-fluid">
-        <div class="fluid-logo">
-          <div class="container">
-            <div class="row align-items-center">
-              <div
-                class="col-servico col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-start">
-                <img
-                  src="images/logo.svg"
-                  class="img-fluid img-logo"
-                  alt="Logotipo de Prefeitura" />
-              </div>
-              <!-- Segunda coluna (6) -->
-              <div
-                class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2 offset-lg-3">
-                <a href class="card card-link">
-                  <img src="images/ouv.svg" alt="Ouvidoria" />
-                  <div class="card-texto">Ouvidoria e e-SIC</div>
-                </a>
-              </div>
-              <div class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2">
-                <a href class="card card-link">
-                  <img
-                    class="img-fluid svg"
-                    src="images/transp.svg"
-                    alt="Portal da Transparencia" />
-                  <div class="card-texto">Portal Transparência</div>
-                </a>
-              </div>
-              <div class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2">
-                <a href class="card card-link">
-                  <img
-                    src="images/carta.svg"
-                    alt="Carta de Serviços ao Cidadão" />
-                  <div class="card-texto">Carta de Serviços ao Cidadão</div>
-                </a>
-              </div>
+		<title>Processo Seletivo MPX Brasil</title>
+	</head>
+	<body>
+		<header
+						<div class="col-12 col-servico">
+							<ul class="lista-flex">
+								<li><a href="#" class="meu-link">Aumentar fonte</a></li>
+								<li><a href="#" class="meu-link">Auto Contraste</a></li>
+								<li><a href="#" class="meu-link">Mapa do Site</a></li>
+								<li><a href="#" class="meu-link">Fonte para dislexia</a></li>
+								<li>
+									<a href="#" class="meu-link">Entenda a Acessibilidade</a>
+								</li>
+								<li>
+									<a href="#" class="meu-link btn-pesquisar">
+										<div>Pesquise no Site</div>
+										<div><i class="bi bi-search"></i></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="container-fluid">
+				<div class="fluid-logo">
+					<div class="container">
+						<div class="row align-items-center">
+							<div
+								class="col-servico col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-start">
+								<img
+									src="images/logo.svg"
+									class="img-fluid img-logo"
+									alt="Logotipo de Prefeitura" />
+							</div>
+							<!-- Segunda coluna (6) -->
+							<div
+								class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2 offset-lg-3">
+								<a href class="card card-link">
+									<img src="images/ouv.svg" alt="Ouvidoria" />
+									<div class="card-texto">Ouvidoria e e-SIC</div>
+								</a>
+							</div>
+							<div class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2">
+								<a href class="card card-link">
+									<img
+										class="img-fluid svg"
+										src="images/transp.svg"
+										alt="Portal da Transparencia" />
+									<div class="card-texto">Portal Transparência</div>
+								</a>
+							</div>
+							<div class="col-servico col-sm-4 col-md-3 col-lg-2 col-xl-2">
+								<a href class="card card-link">
+									<img
+										src="images/carta.svg"
+										alt="Carta de Serviços ao Cidadão" />
+									<div class="card-texto">Carta de Serviços ao Cidadão</div>
+								</a>
+							</div>
 
-      <div class="container-fluid nav-menu">
-        <div class="fluid-menu">
-          <div class="container">
-            <div class="row">
-              <div class="col-servico">
-                <!-- O menu será expandido a partir da largura "md" -->
-                <nav class="navbar navbar-expand-md nav-menu">
-                  <!-- Ícone do menu hambúrguer (visível apenas em telas menores que md) -->
-                  <a
-                    href="javascript:void(0)"
-                    class="navbar-toggler-custom d-md-none"
-                    id="menu-toggle"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown">
-                    <i class="bi bi-list" id="menu-icon"></i>
-                    <!-- Ícone inicial do Bootstrap 5 -->
-                  </a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                  <!-- O conteúdo do menu que será ocultado em telas menores -->
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav nav-link-texto">
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle nav-link-texto"
-                          href="#"
-                          id="navbarDropdownPrefeitura"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Prefeitura
-                        </a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdownPrefeitura">
-                          <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                          <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                        </ul>
-                      </li>
+			<div class="container-fluid nav-menu">
+				<div class="fluid-menu">
+					<div class="container">
+						<div class="row">
+							<div class="col-servico">
+								<!-- O menu será expandido a partir da largura "md" -->
+								<nav class="navbar navbar-expand-md nav-menu">
+									<!-- Ícone do menu hambúrguer (visível apenas em telas menores que md) -->
+									<a
+										href="javascript:void(0)"
+										class="navbar-toggler-custom d-md-none"
+										id="menu-toggle"
+										data-bs-toggle="collapse"
+										data-bs-target="#navbarNavDropdown">
+										<i class="bi bi-list" id="menu-icon"></i>
+										<!-- Ícone inicial do Bootstrap 5 -->
+									</a>
 
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle nav-link-texto"
-                          href="#"
-                          id="navbarDropdownMunicipio"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Município
-                        </a>
-                        <ul
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="navbarDropdownMunicipio">
-                          <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                          <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                        </ul>
-                      </li>
+									<!-- O conteúdo do menu que será ocultado em telas menores -->
+									<div class="collapse navbar-collapse" id="navbarNavDropdown">
+										<ul class="navbar-nav nav-link-texto">
+											<li class="nav-item dropdown">
+												<a
+													class="nav-link dropdown-toggle nav-link-texto"
+													href="#"
+													id="navbarDropdownPrefeitura"
+													role="button"
+													data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Prefeitura
+												</a>
+												<ul
+													class="dropdown-menu"
+													aria-labelledby="navbarDropdownPrefeitura">
+													<li><a class="dropdown-item" href="#">Opção 1</a></li>
+													<li><a class="dropdown-item" href="#">Opção 2</a></li>
+												</ul>
+											</li>
 
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle nav-link-texto"
-                          href="#"
-                          id="navbarDropdownSecretarias"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Secretarias
-                        </a>
-                        <ul
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="navbarDropdownSecretarias">
-                          <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                          <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                        </ul>
-                      </li>
+											<li class="nav-item dropdown">
+												<a
+													class="nav-link dropdown-toggle nav-link-texto"
+													href="#"
+													id="navbarDropdownMunicipio"
+													role="button"
+													data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Município
+												</a>
+												<ul
+													class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="navbarDropdownMunicipio">
+													<li><a class="dropdown-item" href="#">Opção 1</a></li>
+													<li><a class="dropdown-item" href="#">Opção 2</a></li>
+												</ul>
+											</li>
 
-                      <li class="nav-item">
-                        <a class="nav-link nav-link-texto" href="#">Notícias</a>
-                      </li>
+											<li class="nav-item dropdown">
+												<a
+													class="nav-link dropdown-toggle nav-link-texto"
+													href="#"
+													id="navbarDropdownSecretarias"
+													role="button"
+													data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Secretarias
+												</a>
+												<ul
+													class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="navbarDropdownSecretarias">
+													<li><a class="dropdown-item" href="#">Opção 1</a></li>
+													<li><a class="dropdown-item" href="#">Opção 2</a></li>
+												</ul>
+											</li>
 
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle nav-link-texto"
-                          href="#"
-                          id="navbarDropdownImprensa"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Imprensa
-                        </a>
-                        <ul
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="navbarDropdownImprensa">
-                          <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                          <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                        </ul>
-                      </li>
+											<li class="nav-item">
+												<a class="nav-link nav-link-texto" href="#">Notícias</a>
+											</li>
 
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle nav-link-texto"
-                          href="#"
-                          id="navbarDropdownContato"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Contato
-                        </a>
-                        <ul
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="navbarDropdownContato">
-                          <li><a class="dropdown-item" href="#">Opção 1</a></li>
-                          <li><a class="dropdown-item" href="#">Opção 2</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+											<li class="nav-item dropdown">
+												<a
+													class="nav-link dropdown-toggle nav-link-texto"
+													href="#"
+													id="navbarDropdownImprensa"
+													role="button"
+													data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Imprensa
+												</a>
+												<ul
+													class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="navbarDropdownImprensa">
+													<li><a class="dropdown-item" href="#">Opção 1</a></li>
+													<li><a class="dropdown-item" href="#">Opção 2</a></li>
+												</ul>
+											</li>
 
-    <main>
-      <!-- vitrine -->
-      <div class="container-fluid">
-        <div class="fluid-carrosel">
-          <div class="row">
-            <div class="col-servico">
-              <div
-                id="carouselVitrine"
-                class="carousel slide"
-                data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button
-                    class="indicadores active"
-                    type="button"
-                    data-bs-target="#carouselVitrine"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 1"></button>
-                  <button
-                    class="indicadores"
-                    type="button"
-                    data-bs-target="#carouselVitrine"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 2"></button>
-                  <button
-                    class="indicadores"
-                    type="button"
-                    data-bs-target="#carouselVitrine"
-                    data-bs-slide-to="3"
-                    aria-label="Slide 3"></button>
-                </div>
+											<li class="nav-item dropdown">
+												<a
+													class="nav-link dropdown-toggle nav-link-texto"
+													href="#"
+													id="navbarDropdownContato"
+													role="button"
+													data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Contato
+												</a>
+												<ul
+													class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="navbarDropdownContato">
+													<li><a class="dropdown-item" href="#">Opção 1</a></li>
+													<li><a class="dropdown-item" href="#">Opção 2</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-                <div class="carousel-inner">
-                  <div class="carousel-item active d-block w-100">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="images/vitrine.png"
-                      alt="Foto da Cidade" />
-                  </div>
-                  <div class="carousel-item d-block w-100">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="images/vitrine.png"
-                      alt="Foto da Cidade" />
-                  </div>
-                  <div class="carousel-item d-block w-100">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="images/vitrine.png"
-                      alt="Foto da Cidade" />
-                  </div>
-                </div>
+		<main>
+			<!-- vitrine -->
+			<div class="container-fluid">
+				<div class="fluid-carrosel">
+					<div class="row">
+						<div class="col-servico">
+							<div
+								id="carouselVitrine"
+								class="carousel slide"
+								data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button
+										class="indicadores active"
+										type="button"
+										data-bs-target="#carouselVitrine"
+										data-bs-slide-to="1"
+										aria-label="Slide 1"></button>
+									<button
+										class="indicadores"
+										type="button"
+										data-bs-target="#carouselVitrine"
+										data-bs-slide-to="2"
+										aria-label="Slide 2"></button>
+									<button
+										class="indicadores"
+										type="button"
+										data-bs-target="#carouselVitrine"
+										data-bs-slide-to="3"
+										aria-label="Slide 3"></button>
+								</div>
 
-                <!-- Botão ANTERIOR com imagem personalizada -->
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselVitrine"
-                  data-bs-slide="prev">
-                  <img
-                    src="images/image-seta-esquerda.svg"
-                    alt="Anterior"
-                    class="custom-carousel-button" />
-                </button>
+								<div class="carousel-inner">
+									<div class="carousel-item active d-block w-100">
+										<img
+											class="img-fluid img-carousel"
+											src="images/vitrine.png"
+											alt="Foto da Cidade" />
+									</div>
+									<div class="carousel-item d-block w-100">
+										<img
+											class="img-fluid img-carousel"
+											src="images/vitrine.png"
+											alt="Foto da Cidade" />
+									</div>
+									<div class="carousel-item d-block w-100">
+										<img
+											class="img-fluid img-carousel"
+											src="images/vitrine.png"
+											alt="Foto da Cidade" />
+									</div>
+								</div>
 
-                <!-- Botão PRÓXIMO com imagem personalizada -->
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselVitrine"
-                  data-bs-slide="next">
-                  <img
-                    src="images/image-seta-direita.svg"
-                    alt="Próximo"
-                    class="custom-carousel-button" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- serviços -->
+								<!-- Botão ANTERIOR com imagem personalizada -->
+								<button
+									class="carousel-control-prev"
+									type="button"
+									data-bs-target="#carouselVitrine"
+									data-bs-slide="prev">
+									<img
+										src="images/image-seta-esquerda.svg"
+										alt="Anterior"
+										class="custom-carousel-button" />
+								</button>
 
-      <div class="container-fluid">
-        <div class="fluid-servico">
-          <div class="container">
-            <div class="row slick-servicos">
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Câmara dos Deputados</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Nota Fiscal Eletrônica</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Ouvidoria</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">ISSQN</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Transparência</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Câmara dos Deputados3</div>
-                </a>
-              </div>
-              <div class="col-servico">
-                <a href class="card card-servico">
-                  <i class="bi bi-book-half"></i>
-                  <div class="card-texto">Câmara</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- noticias -->
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-vinheta">
-              <span class="vinheta">Notícias</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <a href="#" class="card card-noticia">
-                <img
-                  src="images/foto-center.svg"
-                  class="img-fluid"
-                  alt="Paisagem" />
-                <div class="card-texto-noticia">
-                  Ted Sarandos nomeado co-CEO da Netflix
-                </div>
-                <span class="card-data">13/04/2020</span>
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a href="#" class="card card-noticia">
-                <img
-                  src="images/foto-center (1).svg"
-                  class="img-fluid"
-                  alt="Paisagem" />
-                <div class="card-texto-noticia">
-                  O aplicativo de meditação Calm está tendo seu próprio programa
-                  HBO Max cheio de celebridades
-                </div>
-                <span class="card-data">13/04/2020</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="card fundo-noticias">
-                <div class="row slick-noticias">
-                  <div class="col-noticias">
-                    <a href="#">
-                      <span class="data-noticia">13/04/2020</span>
-                      <img
-                        src="images/image.svg"
-                        class="img-fluid"
-                        alt="Foto 1" />
-                      <div class="card-texto-noticias">
-                        Spaceflight Inc. lança novo veículo de transferência
-                        orbital para foguete via satélite
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-noticias">
-                    <a href="#">
-                      <span class="data-noticia">13/04/2020</span>
-                      <img
-                        src="images/image (3).svg"
-                        class="img-fluid"
-                        alt="Foto 2" />
-                      <div class="card-texto-noticias">
-                        17 filmes icônicos com classificações surpreendentemente
-                        baixas
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-noticias">
-                    <a href="#">
-                      <span class="data-noticia">13/04/2020</span>
-                      <img
-                        src="images/image (2).svg"
-                        class="img-fluid"
-                        alt="Foto 3" />
-                      <div class="card-texto-noticias">
-                        Por que as ações da Netflix caíram 10%
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-noticias">
-                    <a href="#">
-                      <span class="data-noticia">13/04/2020</span>
-                      <img
-                        src="images/image (1).svg"
-                        class="img-fluid"
-                        alt="Foto 4" />
-                      <div class="card-texto-noticias">
-                        Apple abre outra megaloja na China em meio às críticas
-                        de William Barr
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-noticias">
-                    <a href="#">
-                      <span class="data-noticia">13/04/2020</span>
-                      <img
-                        src="images/image (1).svg"
-                        class="img-fluid"
-                        alt="Foto 4" />
-                      <div class="card-texto-noticias">
-                        Apple abre outra megaloja na China em meio às críticas
-                        de William Barr
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- Fim da row dentro do card -->
-              </div>
-              <!-- Fim do card -->
-            </div>
-          </div>
+								<!-- Botão PRÓXIMO com imagem personalizada -->
+								<button
+									class="carousel-control-next"
+									type="button"
+									data-bs-target="#carouselVitrine"
+									data-bs-slide="next">
+									<img
+										src="images/image-seta-direita.svg"
+										alt="Próximo"
+										class="custom-carousel-button" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- serviços -->
 
-          <!-- Aqui está o botão corrigido dentro da .container -->
-          <div class="row justify-content-center">
-            <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
-              <a href="#" class="btn btn-padrao">Veja mais notícias</a>
-            </div>
-          </div>
-        </div>
-        <!-- Fim do .container -->
-      </div>
+			<div class="container-fluid">
+				<div class="fluid-servico">
+					<div class="container">
+						<div class="row slick-servicos">
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Câmara dos Deputados</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Nota Fiscal Eletrônica</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Ouvidoria</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">ISSQN</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Transparência</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Câmara dos Deputados3</div>
+								</a>
+							</div>
+							<div class="col-servico">
+								<a href class="card card-servico">
+									<i class="bi bi-book-half"></i>
+									<div class="card-texto">Câmara</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- noticias -->
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-vinheta">
+							<span class="vinheta">Notícias</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<a href="#" class="card card-noticia">
+								<img
+									src="images/foto-center.svg"
+									class="img-fluid"
+									alt="Paisagem" />
+								<div class="card-texto-noticia">
+									Ted Sarandos nomeado co-CEO da Netflix
+								</div>
+								<span class="card-data">13/04/2020</span>
+							</a>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="#" class="card card-noticia">
+								<img
+									src="images/foto-center (1).svg"
+									class="img-fluid"
+									alt="Paisagem" />
+								<div class="card-texto-noticia">
+									O aplicativo de meditação Calm está tendo seu próprio programa
+									HBO Max cheio de celebridades
+								</div>
+								<span class="card-data">13/04/2020</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="card fundo-noticias">
+								<div class="row slick-noticias">
+									<div class="col-noticias">
+										<a href="#">
+											<span class="data-noticia">13/04/2020</span>
+											<img
+												src="images/image.svg"
+												class="img-fluid"
+												alt="Foto 1" />
+											<div class="card-texto-noticias">
+												Spaceflight Inc. lança novo veículo de transferência
+												orbital para foguete via satélite
+											</div>
+										</a>
+									</div>
+									<div class="col-noticias">
+										<a href="#">
+											<span class="data-noticia">13/04/2020</span>
+											<img
+												src="images/image (3).svg"
+												class="img-fluid"
+												alt="Foto 2" />
+											<div class="card-texto-noticias">
+												17 filmes icônicos com classificações surpreendentemente
+												baixas
+											</div>
+										</a>
+									</div>
+									<div class="col-noticias">
+										<a href="#">
+											<span class="data-noticia">13/04/2020</span>
+											<img
+												src="images/image (2).svg"
+												class="img-fluid"
+												alt="Foto 3" />
+											<div class="card-texto-noticias">
+												Por que as ações da Netflix caíram 10%
+											</div>
+										</a>
+									</div>
+									<div class="col-noticias">
+										<a href="#">
+											<span class="data-noticia">13/04/2020</span>
+											<img
+												src="images/image (1).svg"
+												class="img-fluid"
+												alt="Foto 4" />
+											<div class="card-texto-noticias">
+												Apple abre outra megaloja na China em meio às críticas
+												de William Barr
+											</div>
+										</a>
+									</div>
+									<div class="col-noticias">
+										<a href="#">
+											<span class="data-noticia">13/04/2020</span>
+											<img
+												src="images/image (1).svg"
+												class="img-fluid"
+												alt="Foto 4" />
+											<div class="card-texto-noticias">
+												Apple abre outra megaloja na China em meio às críticas
+												de William Barr
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- Fim da row dentro do card -->
+							</div>
+							<!-- Fim do card -->
+						</div>
+					</div>
 
-      <!-- banners -->
-      <div class="container-fluid">
-        <div class="container container-banner">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <a href="#">
-                <img
-                  src="images/banner-01.svg"
-                  class="img-fluid w-100"
-                  alt="Banner 1" />
-              </a>
-            </div>
-            <div class="col-12 col-md-6">
-              <a href="#">
-                <img
-                  src="images/banner-02.svg"
-                  class="img-fluid w-100"
-                  alt="Banner 2" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+					<!-- Aqui está o botão corrigido dentro da .container -->
+					<div class="row justify-content-center">
+						<div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
+							<a href="#" class="btn btn-padrao">Veja mais notícias</a>
+						</div>
+					</div>
+				</div>
+				<!-- Fim do .container -->
+			</div>
 
-      <!-- Galeria de Fotos -->
+			<!-- banners -->
+			<div class="container-fluid">
+				<div class="container container-banner">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<a href="#">
+								<img
+									src="images/banner-01.svg"
+									class="img-fluid w-100"
+									alt="Banner 1" />
+							</a>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="#">
+								<img
+									src="images/banner-02.svg"
+									class="img-fluid w-100"
+									alt="Banner 2" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="container-fluid">
-        <div class="container-galeria">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-vinheta">
-                <span class="vinheta--branca">Galeria de Fotos</span>
-              </div>
-            </div>
-          </div>
+			<!-- Galeria de Fotos -->
 
-          <div class="row">
-            <div class="col-12">
-              <div class="row slick-galeria">
-                <a href="#" class="col-galeria">
-                  <div class="foto-container">
-                    <div class="efeito-imagem"></div>
-                    <img
-                      src="images/foto-esquerda.svg"
-                      class="img-fluid w-100"
-                      alt="Casas" />
-                    <span class="data-noticia">13/04/2020</span>
-                  </div>
-                </a>
-                <a href="#" class="col-galeria">
-                  <div class="foto-container">
-                    <div class="efeito-imagem"></div>
-                    <img
-                      src="images/foto-esquerda.svg"
-                      class="img-fluid w-100"
-                      alt="Casas" />
-                    <span class="data-noticia">13/04/2020</span>
-                  </div>
-                </a>
-                <a href="#" class="col-galeria">
-                  <div class="foto-container">
-                    <div class="efeito-imagem"></div>
-                    <img
-                      src="images/foto-direita.svg"
-                      class="img-fluid w-100"
-                      alt="Casas" />
-                    <span class="data-noticia">13/04/2020</span>
-                  </div>
-                </a>
-                <a href="#" class="col-galeria">
-                  <div class="foto-container">
-                    <div class="efeito-imagem"></div>
-                    <img
-                      src="images/foto-direita.svg"
-                      class="img-fluid w-100"
-                      alt="Casas" />
-                    <span class="data-noticia">13/04/2020</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
-              <a href="#" class="btn btn-padrao">Veja mais galerias</a>
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="container-fluid">
+				<div class="container-galeria">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-vinheta">
+								<span class="vinheta--branca">Galeria de Fotos</span>
+							</div>
+						</div>
+					</div>
 
-      <!-- Calendário de Eventos -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-noticias col-vinheta">
-                  <span class="vinheta">Calendário de Eventos</span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="card card-calendario">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-6 col-12 col-calendario">
-                      <div class="card-data">
-                        <h3 class="titulo-calendario">
-                          <span>13</span> de dezembro 2020
-                        </h3>
-                        <span class="subtitulo-calendario">A partir das
-                          16:30</span>
-                        <img src="images/agenda-1.png" class="img-fluid w-100"
-                          alt="Foto 1" />
-                        <p class="texto-calendario">Como escrever conteúdo sobre
-                          suas fotos</p>
-                        <p class="subtexto-calendario">Rua das Azaleias, 257 -
-                          Jardim Botânico - Sinop/MT</p>
-                      </div>
-                    </div>
+					<div class="row">
+						<div class="col-12">
+							<div class="row slick-galeria">
+								<a href="#" class="col-galeria">
+									<div class="foto-container">
+										<div class="efeito-imagem"></div>
+										<img
+											src="images/foto-esquerda.svg"
+											class="img-fluid w-100"
+											alt="Casas" />
+										<span class="data-noticia">13/04/2020</span>
+									</div>
+								</a>
+								<a href="#" class="col-galeria">
+									<div class="foto-container">
+										<div class="efeito-imagem"></div>
+										<img
+											src="images/foto-esquerda.svg"
+											class="img-fluid w-100"
+											alt="Casas" />
+										<span class="data-noticia">13/04/2020</span>
+									</div>
+								</a>
+								<a href="#" class="col-galeria">
+									<div class="foto-container">
+										<div class="efeito-imagem"></div>
+										<img
+											src="images/foto-direita.svg"
+											class="img-fluid w-100"
+											alt="Casas" />
+										<span class="data-noticia">13/04/2020</span>
+									</div>
+								</a>
+								<a href="#" class="col-galeria">
+									<div class="foto-container">
+										<div class="efeito-imagem"></div>
+										<img
+											src="images/foto-direita.svg"
+											class="img-fluid w-100"
+											alt="Casas" />
+										<span class="data-noticia">13/04/2020</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
+							<a href="#" class="btn btn-padrao">Veja mais galerias</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                    <div class="col-md-3 col-sm-6 col-12 col-calendario">
-                      <div class="card-data">
-                        <h3 class="titulo-calendario">
-                          <span>13</span> de dezembro 2020
-                        </h3>
-                        <span class="subtitulo-calendario">A partir das
-                          16:30</span>
-                        <img src="images/agenda-2.png" class="img-fluid w-100"
-                          alt="Foto 1" />
-                        <p class="texto-calendario">Onde expandir seu negócio
-                          como fotógrafo: site ou mídia social?</p>
-                        <p class="subtexto-calendario">Rua das Azaleias, 257 -
-                          Jardim Botânico - Sinop/MT</p>
-                      </div>
-                    </div>
+			<!-- Calendário de Eventos -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-noticias col-vinheta">
+									<span class="vinheta">Calendário de Eventos</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="card card-calendario">
+									<div class="row">
+										<div class="col-12 col-md-6 col-lg-3 col-calendario">
+											<div class="card-data">
+												<h3 class="titulo-calendario">
+													<span>13</span> de dezembro 2020
+												</h3>
+												<span class="subtitulo-calendario">A partir das
+													16:30</span>
+												<img src="images/agenda-1.png" class="img-fluid w-100"
+													alt="Foto 1" />
+												<p class="texto-calendario">Como escrever conteúdo sobre
+													suas fotos</p>
+												<p class="subtexto-calendario">Rua das Azaleias, 257 -
+													Jardim Botânico - Sinop/MT</p>
+											</div>
+										</div>
 
-                    <div class="col-md-3 col-sm-6 col-12 col-calendario">
-                      <div class="card-data">
-                        <h3 class="titulo-calendario">
-                          <span>13</span> de dezembro 2020
-                        </h3>
-                        <span class="subtitulo-calendario">A partir das
-                          16:30</span>
-                        <img src="images/agenda-3.png" class="img-fluid w-100"
-                          alt="Foto 1" />
-                        <p class="texto-calendario">Como um artista visual
-                          redefine o sucesso em design gráfico</p>
-                        <p class="subtexto-calendario">Rua das Azaleias, 257 -
-                          Jardim Botânico - Sinop/MT</p>
-                      </div>
-                    </div>
+										<div class="col-12 col-md-6 col-lg-3 col-calendario">
+											<div class="card-data">
+												<h3 class="titulo-calendario">
+													<span>13</span> de dezembro 2020
+												</h3>
+												<span class="subtitulo-calendario">A partir das
+													16:30</span>
+												<img src="images/agenda-2.png" class="img-fluid w-100"
+													alt="Foto 1" />
+												<p class="texto-calendario">Onde expandir seu negócio
+													como fotógrafo: site ou mídia social?</p>
+												<p class="subtexto-calendario">Rua das Azaleias, 257 -
+													Jardim Botânico - Sinop/MT</p>
+											</div>
+										</div>
 
-                    <div class="col-md-3 col-sm-6 col-12 col-calendario">
-                      <div class="card-data">
-                        <h3 class="titulo-calendario">
-                          <span>13</span> de dezembro 2020
-                        </h3>
-                        <span class="subtitulo-calendario">A partir das
-                          16:30</span>
-                        <img src="images/agenda-4.png" class="img-fluid w-100"
-                          alt="Foto 1" />
-                        <p class="texto-calendario">Comece um blog para atingir
-                          seu pico criativo</p>
-                        <p class="subtexto-calendario">Rua das Azaleias, 257 -
-                          Jardim Botânico - Sinop/MT</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div
-                    class="col-12 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
-                    <a href="#" class="btn btn-padrao">Veja mais eventos</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- galeria de videos e obras -->
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-12 col-vinheta">
-                  <span class="vinheta">Galeria de Vídeos</span>
-                </div>
-              </div>
-              <div class="card card-galerias video-galeria">
-                <iframe
-                  src="https://www.youtube.com/embed/NDQheDRYBrg?si=CzZFEarBdygMtT6q"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="video-galeria">
-                </iframe>
-                <div class="card-texto-galerias">
-                  Como a escrita influencia sua marca pessoal?
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 col-btn">
-                  <a href="Municipio/Galeria-de-Obras/" class="btn-padrao">Veja
-                    mais Videos</a>
-                </div>
-              </div>
-            </div>
+										<div class="col-12 col-md-6 col-lg-3 col-calendario">
+											<div class="card-data">
+												<h3 class="titulo-calendario">
+													<span>13</span> de dezembro 2020
+												</h3>
+												<span class="subtitulo-calendario">A partir das
+													16:30</span>
+												<img src="images/agenda-3.png" class="img-fluid w-100"
+													alt="Foto 1" />
+												<p class="texto-calendario">Como um artista visual
+													redefine o sucesso em design gráfico</p>
+												<p class="subtexto-calendario">Rua das Azaleias, 257 -
+													Jardim Botânico - Sinop/MT</p>
+											</div>
+										</div>
 
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-12 col-vinheta">
-                  <span class="vinheta">Galeria de Obras</span>
-                </div>
-              </div>
-              <div class="card card-galerias">
-                <a href="#">
-                  <img src="images/foto-obras.svg" class="img-fluid w-100"
-                    alt="Paisagem" />
-                  <span class="data-noticia-galerias">13/04/2020</span>
-                  <div class="card-texto-galerias">
-                    Por que não usamos sites prontos
-                  </div>
-                </a>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 col-btn">
-                  <a href="Municipio/Galeria-de-Obras/" class="btn-padrao">Veja
-                    mais Obras</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+										<div class="col-12 col-md-6 col-lg-3 col-calendario">
+											<div class="card-data">
+												<h3 class="titulo-calendario">
+													<span>13</span> de dezembro 2020
+												</h3>
+												<span class="subtitulo-calendario">A partir das
+													16:30</span>
+												<img src="images/agenda-4.png" class="img-fluid w-100"
+													alt="Foto 1" />
+												<p class="texto-calendario">Comece um blog para atingir
+													seu pico criativo</p>
+												<p class="subtexto-calendario">Rua das Azaleias, 257 -
+													Jardim Botânico - Sinop/MT</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center">
+									<div
+										class="col-12 col-sm-6 col-md-4 col-lg-3 col-xs-2 col-btn">
+										<a href="#" class="btn btn-padrao">Veja mais eventos</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- galeria de videos e obras -->
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<div class="col-12 col-vinheta">
+									<span class="vinheta">Galeria de Vídeos</span>
+								</div>
+							</div>
+							<div class="card card-galerias video-galeria">
+								<iframe
+									src="https://www.youtube.com/embed/NDQheDRYBrg?si=CzZFEarBdygMtT6q"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+									class="video-galeria">
+								</iframe>
+								<div class="card-texto-galerias">
+									Como a escrita influencia sua marca pessoal?
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-lg-6 col-btn">
+									<a href="Municipio/Galeria-de-Obras/" class="btn-padrao">Veja
+										mais Videos</a>
+								</div>
+							</div>
+						</div>
 
-      <!-- conheça a cidade -->
-    </main>
-    <footer>
-      <!-- footer/contato -->
-      <div class="container-fluid">
-        <div class="fluid-contato">
-          <div class="container">
-            <div class="row justify-content-center text-center">
-              <div class="col-12 col-md-4">
-                <div class="titulo-contato">
-                  Horário de Atendimento
-                  <h5><span>Segunda à Sexta, 07h às 11h e das 13h às
-                      17h</span></h5>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="titulo-contato">
-                  Endereço
-                  <h5><span>Rua das Azaleias, 257 - Jardim Botânico -
-                      Sinop/MT</span></h5>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="titulo-contato">
-                  Fale com a Prefeitura
-                  <h5><span>(66) 3535-3535 <br> (66) 9 9999-9999</span></h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<div class="col-12 col-vinheta">
+									<span class="vinheta">Galeria de Obras</span>
+								</div>
+							</div>
+							<div class="card card-galerias--obras">
+								<a href="#">
+									<img src="images/foto-obras.svg" class="img-fluid w-100"
+										alt="Paisagem" />
+									<span class="data-noticia-galerias">13/04/2020</span>
+									<div class="card-texto-galerias">
+										Por que não usamos sites prontos
+									</div>
+								</a>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-lg-6 col-btn">
+									<a href="Municipio/Galeria-de-Obras/" class="btn-padrao">Veja
+										mais Obras</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="container-fluid">
-        <div class="fluid-links">
-          <div class="container">
-            <div class="row justify-content-center text-center">
-              <!-- Primeira coluna: Imprensa -->
-              <div class="col-12 col-md-3">
-                <div class="titulo-contato">
-                  Imprensa
-                  <ul>
-                    <li><a href="#"><span>Notícias</span></a></li>
-                    <li><a href="#"><span>Agenda da Cidade</span></a></li>
-                    <li><a href="#"><span>Galeria de Fotos</span></a></li>
-                    <li><a href="#"><span>Galeria de Vídeos</span></a></li>
-                  </ul>
-                </div>
-
-                <div class="titulo-contato">
-                  Contato
-                  <ul>
-                    <li><a href="#"><span>Ouvidoria E-SIC</span></a></li>
-                    <li><a href="#"><span>Telefones Úteis</span></a></li>
-
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Segunda coluna: Prefeitura -->
-              <div class="col-12 col-md-3">
-                <div class="titulo-contato">
-                  Prefeitura
-                  <ul>
-                    <li><a href="#"><span>Equipe do Governo</span></a></li>
-                    <li><a href="#"><span>Fotos da Prefeitura</span></a></li>
-                    <li><a href="#"><span>Galeria de Prefeitos</span></a></li>
-                    <li><a href="#"><span>Conheça Nosso Prefeito</span></a></li>
-                    <li><a href="#"><span>Conheça Nosso Vice
-                          Prefeito</span></a></li>
-                    <li><a href="#"><span>Competência, estrutura e
-                          organizacional</span></a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Terceira coluna: Município -->
-              <div class="col-12 col-md-3">
-                <div class="titulo-contato">
-                  Município
-                  <ul>
-                    <li><a href="#"><span>Economia</span></a></li>
-                    <li><a href="#"><span>Simbolos</span></a></li>
-                    <li><a href="#"><span>Como Chegar</span></a></li>
-                    <li><a href="#"><span>Galeria de Obras</span></a></li>
-                    <li><a href="#"><span>História do Município</span></a></li>
-                    <li><a href="#"><span>Hino, Bandeira e
-                          Brasão</span></a></li>
-                    <li><a href="#"><span>Conheça Nosso
-                          Município</span></a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Quarta coluna: Secretarias -->
-              <div class="col-12 col-md-3">
-                <div class="titulo-contato">
-                  Secretarias
-                  <ul>
-                    <li><a href="#"><span>Administração</span></a></li>
-                    <li><a href="#"><span>Agricultura e Desenvolvimento
-                          Econômico Sustentável</span></a></li>
-                    <li><a href="#"><span>Assistência Social</span></a></li>
-                    <li><a href="#"><span>Educação</span></a></li>
-                    <li><a href="#"><span>Esportes</span></a></li>
-                    <li><a href="#"><span>Finanças</span></a></li>
-                    <li><a href="#"><span>Infraestrutura</span></a></li>
-                    <li><a href="#"><span>Meio Ambiente, Turismo,
-                          Cultura</span></a></li>
-                    <li><a href="#"><span>Planejamento, Tecnologia e
-                          Informática</span></a></li>
-                    <li><a href="#"><span>Saúde</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- footer/mapa do site -->
-
-      <!-- footer/mapa -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <!-- Colocando o mapa dentro de um container com a classe 'container' -->
-            <div id="map" style="width: 100%; height: 500px;"></div>
-          </div>
-        </div>
-      </div>
-      <!-- direitos -->
-    </footer>
-  </body>
-</html>
+			<!-- conheça a cidade -->
+			<div class="container-fluid">
+				<div class="fluid-parallax" data-parallax="scroll"
+					data-image-src=" 
+					<!DOCTYPE html>
+					<html lang="pt-br">
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<title>Parallax Example</title>
+						<script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+						<link rel="stylesheet" href="styles.css"> <!-- Se você tiver um arquivo CSS separado -->
+					</head>
+					<body>
+						<section class="container-fluid fluid-parallax" aria-labelledby="section-label-parallax">
+							<div class="row" id="section-label-parallax">
+								<div class="simpleParallax" style="overflow: hidden;">
+									<img class="img-fluid w-100 thumbnail" src="images/caceres.png" alt="image">
+								</div>
+							</div>
+						</section>
+					
+						<script>
+							document.addEventListener('DOMContentLoaded', function () {
+								var parallaxElement = document.querySelector('.simpleParallax');
+								var parallaxInstance = new Parallax(parallaxElement);
+							});
+						</script>
+					</body>
+					</html>
+					</html>

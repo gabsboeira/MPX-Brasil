@@ -111,15 +111,15 @@ $(document).ready( function ( $ ) {
             {
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 3,
-                    slidesToScroll: 3,
+					slidesToShow: 2,
+                    slidesToScroll: 2,
 				}
 			},
 			{
-				breakpoint: 575,
+				breakpoint: 576,
 				settings: {
-					slidesToShow: 2,
-                    slidesToScroll: 2,
+					slidesToShow: 1,
+                    slidesToScroll: 1,
                     arrows: false,
 				}
 			}
@@ -139,58 +139,53 @@ $(document).ready( function ( $ ) {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     arrows: false,
                 }
             }
         ]
     });
+
+    window.onload = function () {
+        var parallaxElement = document.querySelector('.fluid-parallax');
+        var parallaxInstance = new Parallax(parallaxElement);
+    }
     
 });
 
-$(document).ready(function() {
-    var location = { lat: -11.8647, lng: -55.5096 };  // Coordenadas de Sinop
-
-    // Inicializa o mapa
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
-      center: location
-    });
-
-    // Cria um marcador no mapa
-    var marker = new google.maps.Marker({
-      position: location,
-      map: map
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleciona o elemento com a classe 'fluid-parallax' 
+    var parallaxElement = document.querySelector('.fluid-parallax');
+    
+    // Inicializa o Parallax.js para o elemento selecionado
+    new Parallax(parallaxElement);
 });
-
-  // Certifique-se de que todas as funções e objetos estão devidamente fechados

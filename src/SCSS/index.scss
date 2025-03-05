@@ -557,7 +557,7 @@ body {
 	margin-top: 32px;
 
 	@media screen and (max-width: 575.9px) {
-		padding-left: 45px;
+		// padding-left: 45px;
 	}
 
 	.slick-track {
@@ -612,6 +612,9 @@ body {
 			z-index: -1;
 			top: 5px;
 			right: 0px;
+			@media screen and (max-width: 575.9px) {
+				display: none;
+			}
 		}
 
 		a {
@@ -687,7 +690,7 @@ body {
 }
 
 .btn-padrao {
-	width: 70%;
+	width: 100%;
 	margin-bottom: 30px;
 	border-radius: 12px;
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
@@ -855,6 +858,24 @@ body {
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.2); // Linha vertical semi-transparente
 		}
+		@media screen and (max-width: 991.9px) {
+			&:not(:last-child)::after {
+				height: 90%;
+			}
+			&:nth-child(2)::after {
+				display: none; // Remove apenas no media query
+			}
+		}
+		@media screen and (max-width: 991.9px) {
+			margin-top: 20px;
+			&:not(:last-child) {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.2);				
+			}
+			
+			&::after {
+				display: none; // Remove apenas no media query
+			}
+		}
 	}
 
 	.card-data {
@@ -898,6 +919,10 @@ body {
 			color: #616161;
 			margin: 12px 0 0;
 		}
+
+		@media screen and (max-width: 991.9px) {
+			margin-bottom: 30px;
+		}
 	}
 }
 .card-galerias {
@@ -905,12 +930,23 @@ body {
     border: solid 1px #eeeeee;
     background-color: #ffffff;
     text-decoration: none;
-    padding-bottom: 10px;
+    padding: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 	margin-bottom: 30px;
+
+	&--obras {
+		@extend .card-galerias;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+
+	.img-obras {
+		max-height: 336px;
+		border-radius: 24px;
+	}
 
     .video-galeria {
 		width: 100%;
@@ -918,6 +954,9 @@ body {
 		object-fit: cover;
 		display: block;
 		border-radius: 24px;
+		iframe {
+			border-radius: 24px;
+		}
 	}
 
     .img-container img {
@@ -951,6 +990,38 @@ body {
 		text-decoration: none;
     }
 }
+
+.col-mapa {
+	iframe {
+		border-bottom-right-radius: 24px;
+		border-bottom-left-radius: 24px;
+	}
+}
+
+.fluid-parallax {
+	background-image: url('../images/image-background.jpg'); /* Insira a string Base64 aqui */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 24px;
+    margin-bottom: 80px;
+    position: relative; /* Necessário para o efeito parallax funcionar corretamente */
+
+    .card-parallax {
+        border-radius: 24px;
+        border: solid 1px #eeeeee;
+        background-color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+}
+
+
 .fluid-contato{
 	background-color: #0277bd;
 	padding: 16px 0px;
@@ -958,20 +1029,47 @@ body {
 	border-top-right-radius: 24px;
 
 	.titulo-contato{
-		font-family: "Inter-Bold";
-		font-size: 24px;
-		font-weight: 100;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: left;
-		color: white;
+		h3 {
+			font-family: "Inter-Bold";
+			font-size: 24px;
+			font-weight: 100;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
+			color: white;
+		}
 		
+		a {
+			font-size: 16px;
+			font-weight: 0;
+			font-family: "Inter-Regular";
+			display: block;
+			color: white;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		span{
 			font-size: 16px;
 			font-weight: 0;
 			font-family: "Inter-Regular";
+			display: block;
+			color: white;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
 		}
 	}
 }
@@ -1026,14 +1124,21 @@ body {
 	}
   }
 }
-.rodapé{
+
+.col-img-footer{
+	text-align: end;
+}
+.rodape{
   font-size: 16px;
   font-family: "Inter-Regular";
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
   color: #212529
+}
+
+a {
+	text-decoration: none;
 }
